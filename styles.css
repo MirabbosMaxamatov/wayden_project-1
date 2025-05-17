@@ -1,0 +1,456 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: white;
+    color: #0f172a;
+}
+
+/* Header styles */
+.header {
+    background-color: #0ea5e9;
+    padding: 2.25rem 5rem;
+}
+
+.header-container {
+    max-width: 1188px;
+    margin: 0 auto;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.nav-left {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.logo-text {
+    color: white;
+}
+
+.logo-dot {
+    color: #1f98f0;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 0.625rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.nav-link.active {
+    opacity: 1;
+}
+
+.download-btn {
+    background-color: white;
+    color: #0f172a;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    border: none;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #0ea5e9;
+    padding: 0 5rem;
+}
+
+.hero-content {
+    display: flex;
+    gap: 1.25rem;
+    max-width: 1141px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    width: 43%;
+    padding-right: 2rem;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.25;
+    margin-bottom: 2.5rem;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    line-height: 2;
+    color: white;
+    margin-bottom: 3.5rem;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.store-button {
+    max-width: 205px;
+    height: auto;
+}
+
+.hero-image {
+    width: 57%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 0;
+    max-width: 1089px;
+    margin: 0 auto;
+}
+
+.features h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 3.5rem;
+}
+
+.features-content {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.features-image {
+    width: 40%;
+}
+
+.features-list {
+    width: 60%;
+}
+
+.features-list h3 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.feature-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.feature-item img {
+    width: 92px;
+    height: 92px;
+    object-fit: contain;
+}
+
+.feature-text h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+
+.feature-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
+/* Testimonials Section */
+.testimonials {
+    max-width: 1089px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.testimonials h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.testimonials-grid {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.testimonial-card {
+    width: 33.333%;
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    margin-bottom: 1.25rem;
+}
+
+.testimonial-card h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
+/* CTA Section */
+.cta {
+    background-color: #0ea5e9;
+    padding: 6rem 4rem;
+    margin: 5rem 0;
+}
+
+.cta-content {
+    max-width: 999px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* News Section */
+.news {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.news h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.news-grid {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 2.75rem;
+}
+
+.news-card {
+    width: 33.333%;
+}
+
+.news-card img {
+    width: 100%;
+    aspect-ratio: 1.55;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+.news-card h3 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.news-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.7;
+    color: #6b7280;
+}
+
+.read-more-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 867px;
+    margin: 0 auto;
+}
+
+.read-more {
+    color: #0ea5e9;
+    font-size: 1.125rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #0f172a;
+    padding: 6rem 4rem;
+    color: white;
+}
+
+.footer-content {
+    max-width: 1141px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+}
+
+.footer-brand {
+    max-width: 25%;
+}
+
+.footer-brand h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 2.25rem;
+}
+
+.footer-brand p {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
+.footer-nav h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 2.25rem;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav li {
+    margin-bottom: 1rem;
+}
+
+.footer-nav a {
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.newsletter h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.newsletter-form input {
+    padding: 0.625rem;
+    background-color: white;
+    border: none;
+}
+
+.newsletter-form button {
+    padding: 0.625rem 2.25rem;
+    background-color: #0ea5e9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter ul {
+    list-style: none;
+}
+
+.newsletter li {
+    margin-bottom: 1rem;
+}
+
+.newsletter a {
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header {
+        padding: 2.25rem 1.25rem;
+    }
+
+    .nav-wrapper {
+        flex-direction: column;
+    }
+
+    .nav-left {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        padding: 1.25rem;
+    }
+
+    .hero-text, .hero-image {
+        width: 100%;
+    }
+
+    .features-content {
+        flex-direction: column;
+    }
+
+    .features-image, .features-list {
+        width: 100%;
+    }
+
+    .testimonials-grid, .news-grid {
+        flex-direction: column;
+    }
+
+    .testimonial-card, .news-card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+}
